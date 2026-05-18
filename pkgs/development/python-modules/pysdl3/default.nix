@@ -16,7 +16,7 @@
   sdl3-image,
 }:
 let
-  version = "0.9.11b1";
+  version = "0.9.11b0";
 
   # Arranging these as normal derivations allows the updater to function while still allowing easy access to the fod via the `src` attribute.
   # They are placed in separate files since the update script will replace all instances of the old version string
@@ -46,7 +46,7 @@ buildPythonPackage {
     owner = "Aermoss";
     repo = "PySDL3";
     tag = "v${version}";
-    hash = "sha256-fATBYZ4DYpOYYr09SwfODaWqEwQtig0smqI2Pjnv9uo=";
+    hash = "sha256-AAAAYZ4DYpOYYr09SwfODaWqEwQtig0smqI2Pjnv9uo=";
   };
 
   passthru = { inherit docfile docfiles; };
